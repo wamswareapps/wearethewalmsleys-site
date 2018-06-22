@@ -32,7 +32,7 @@
       margin-bottom: 30px;
   }  
   .jumbotron {
-      background-color: #f4511e;
+      background-color: #415272;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -44,11 +44,11 @@
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: #f4511e;
+      color: #415272;
       font-size: 50px;
   }
   .logo {
-      color: #f4511e;
+      color: #415272;
       font-size: 200px;
   }
   .thumbnail {
@@ -63,13 +63,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #f4511e;
+      color: #415272;
   }
   .carousel-indicators li {
-      border-color: #f4511e;
+      border-color: #415272;
   }
   .carousel-indicators li.active {
-      background-color: #f4511e;
+      background-color: #415272;
   }
   .item h4 {
       font-size: 19px;
@@ -82,7 +82,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #415272; 
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -90,13 +90,13 @@
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
+      border: 1px solid #415272;
       background-color: #fff !important;
-      color: #f4511e;
+      color: #415272;
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #f4511e !important;
+      background-color: #415272 !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -116,12 +116,12 @@
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #f4511e;
+      background-color: #415272;
       color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #415272;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -134,7 +134,7 @@
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
+      color: #415272 !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -144,7 +144,7 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+      color: #415272;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -188,6 +188,23 @@
     .logo {
         font-size: 150px;
     }
+
+       /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+       .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
   }
   </style>
 </head>
@@ -246,8 +263,8 @@
       <p><a href="https://www.youtube.com/channel/UCJROr7U3z-SpKJ6E-Y_PBaA">Juggling Matt</a></p>
       <p>Matt: The title says it all.  Enjoy plenty of Juggling entertainment.  All juggling, all the time</p>
       <h3>Jim Jams</h3>
-      <p><a href="https://www.youtube.com/channel/UCZ1HIwsMIOuk_HaDNlGgFYQ">Jim Jams 1</a></p>
-      <p><a href="https://www.youtube.com/channel/UCMhI3Gw8gwzXEROMnBA44Vw">Jim Jams 2</a></p>
+      <p><a href="https://www.youtube.com/channel/UCZ1HIwsMIOuk_HaDNlGgFYQ">Jim Jams 1</p>
+      <p><a href="https://www.youtube.com/channel/UCMhI3Gw8gwzXEROMnBA44Vw">Jim Jams 2</p>
       <p>James J ("Jimmy") always has new musical ideas and we all enjoy listening</p>
       <h3>JP Photography</h3>
       <p><a href="#">JP Photography</a></p>
@@ -274,6 +291,46 @@
 <!-- Container (blog Section) -->
 <div id="blog" class="container-fluid bg-grey">
   <h2 class="text-center">blog</h2>
+
+  <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#section1">Home</a></li>
+            <li><a href="#section2">Announcements</a></li>
+            <li><a href="#section3">Project Updates</a></li>
+          </ul><br>
+          <!-- <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Blog..">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div> -->
+        </div>
+    
+        <div class="col-sm-9">
+          <h4><small>RECENT POSTS</small></h4>
+          <hr>
+          <h2>Welcome</h2>
+          <h5><span class="glyphicon glyphicon-time"></span> Post by James Walmsley IV, 6/22/2018.</h5>
+          <h5><span class="label label-primary">Introduction</span></h5><br>
+          <p>This is the first draft of our website. We hope you enjoy it. Stay tuned for announcements and project updates.</p>
+          <br><br>
+      
+          <!-- <h4>Leave a Comment:</h4>
+          <form role="form">
+            <div class="form-group">
+              <textarea class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <br><br> -->
+        </div>
+      </div>
+      </div>
 </div>
 
 <footer class="container-fluid text-center">
@@ -318,7 +375,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
